@@ -22,8 +22,8 @@ const PlaceSchema = mongoose.Schema({
   },
   perks: [String],
   extraInfo: String,
-  checkIn: Number,
-  CheckOut: Number,
+  checkIn: String,
+  CheckOut: String,
   maxGuests: Number,
   photos: [String],
 });
