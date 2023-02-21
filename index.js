@@ -45,7 +45,7 @@ mongoose.connect(process.env.MONGO_URI);
 
 // USER ROUTES
 app.get("/test", async (req, res) => {
-  res.json(await Place.find());
+  res.json("TEST PAGE OK!");
 });
 
 app.post("/register", registerUser);
