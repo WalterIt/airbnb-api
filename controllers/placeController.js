@@ -102,6 +102,7 @@ const updatePlace = async (req, res) => {
 };
 
 const getPlaces = async (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "https://vs-airbnb.vercel.app");
   res.json(await Place.find());
 };
 
