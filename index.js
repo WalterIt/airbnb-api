@@ -32,12 +32,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
-app.use(
-  cors({
-    origin: ["http://localhost:5173", "https://vs-airbnb.vercel.app"],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_URI);
 
